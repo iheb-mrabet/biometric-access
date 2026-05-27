@@ -1,0 +1,47 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+models/secret_key.txt
+
+# Biometric data and operational evidence
+data/*
+!data/.gitkeep
+captures/*
+!captures/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Locally trained or downloaded model artifacts
+models/*
+!models/.gitkeep
+*.onnx
+*.pt
+*.pth
+*.pkl
+
+# Database / status files
+*.db
+*.sqlite
+*.sqlite3
+
+# Development patches and backup files
+patch_*.py
+*.bak*
+*.backup*
+
+# Editors and operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
